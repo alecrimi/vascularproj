@@ -56,9 +56,9 @@ for kk = 1 : length(names)
         [res(kk),dens(kk),vol_plaque(kk)] = extract_feat_big( names{kk} , method, use_snake);
     end
     
-    filename = [working_dir  'test.csv'];
+    filename = [working_dir  'results.csv'];
     T = table( names',res,vol_plaque,dens);
-    T.Properties.VariableNames={'Filename', 'CellCount','Volume'};
+    T.Properties.VariableNames={'Filename', 'CellCount','Volume','Density'};
     writetable(T,filename,'Delimiter',',');
 end
 
