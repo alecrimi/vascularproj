@@ -3,6 +3,8 @@
 from skimage import data,io,exposure,img_as_float
 import numpy as np
 
+############################ I AM CURRENTLY CHANGING THIS, TRY THE OTHER SCRIPT ###############
+
 namefile = 'pvalues_p0.0001_montage_mip_alt2.tif'
 
 im = io.imread(namefile)
