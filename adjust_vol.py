@@ -1,3 +1,5 @@
+# CLAHE local contrast adjustment for multipage tif volumes
+
 from skimage import data,io,exposure,img_as_float
 import numpy as np
 
