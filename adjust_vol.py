@@ -6,7 +6,7 @@ import numpy as np
 
 from skimage import img_as_float
 from skimage import exposure,io
-from tifffile import imsave
+from tifffile import imsave #This has to be fixed more friendly directly with Skimage
 
 # Load an example image
 namefile = 'slice.png'
