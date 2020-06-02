@@ -82,9 +82,9 @@ vol = sum( sum( sum( BW2 ) )) ;
 
 % Wajtershedpipeline
 D = -bwdist(~BW2);
-Ld = watershed(D);
-bw2 = BW2;
-bw2(Ld==0) = 0;
+%Ld = watershed(D);
+%bw2 = BW2;
+%bw2(Ld==0) = 0;
 mask = imextendedmin(D,2);
 D2 = imimposemin(D,mask);
 Ld2 = watershed(D2);
